@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('items', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('iconUrl');
+            $table->string('itemIconUrl');
             $table->foreignId('gameId')->constrained('games');
         });
     }
